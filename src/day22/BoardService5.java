@@ -18,7 +18,6 @@
 */
 package day22;
 
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -54,7 +53,7 @@ public class BoardService5 {
 
                         System.out.printf("작성자 : %s, 내용 : %s%n ", boardList.get(index).writer, boardList.get(index).content);
 
-                }
+                }//boardList/*컬렉션 프레임 워크에서 */.get(index)/*몇번째 값을 가져온다*/.writer/*작성자 내용을*/
 
             }
 
