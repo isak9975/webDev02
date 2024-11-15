@@ -47,7 +47,6 @@ public class BoardService5 {
 
                 boardList.add(board);
 
-
             } else if(choose == 2){
                 for(int index = 0; index <= boardList.size()-1 ; index++){
 
@@ -62,3 +61,5 @@ public class BoardService5 {
 
     }
 }
+
+

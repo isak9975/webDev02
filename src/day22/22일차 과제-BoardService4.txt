@@ -1,10 +1,191 @@
 <1>
 public Class BoardService4{
     public static void main(String[] args){
-        Scanner scan= new
+        Scanner scan= new Scanner(System.in);
+        Board[] boardList =  null;
+        int count=0;
+        while(true){
+            System.out.println("1.글쓰기 2. 글출력 : ");
+            int choose = scan.nextInt();
+            if(choose = 1){
+                System.out.print("내용 : "); String content = scan,next();
+                System.out.print("작성자 : "); String writer = scan.next();
+                System.out.print("비밀번호 : "); int pwd = scan,nextInt();
+
+                Board board = new Board();
+                board.content = content; board.writer = writer; board.pwd = pwd;
+
+                count++;
+
+                Board[] newBoardList = new Board[count];
+                if(count != 1){
+                    for(int index = 0; index <= boardList.length-1; index++){
+                        newBoardList[index] = boardList[index];
+                    }
+                }
+                newBoardList[count-1] = board;
+                boardList = newBoardList;
+            }
+            else if(choose == 2){
+                for(int index = 0;  index <= boardList.length-1;index++){
+                    if(boardList[index] != null){
+                        System.out.prinf("작성자 : %s, 내용: %s%n".boardList[index].writer,boardList[index].content);
+                    }
+                }
+            }
+        }
     }//main end
 }//class end
+
 <2>
+public Class BoardService4{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        Board[] boardList = null;
+        int count = 0;
+        while(ture){
+            System.out.println("1.글쓰기 2. 글출력 :");
+            int choose = scan.nextInt();
+            if(choose ==1){
+                System.out.print("내용 : "); String content = scan.next();
+                System.out.print("작성자 : "); String writer = scan.next();
+                System.out.print("비밀번호 : "); int pwd = scan,nextInt();
+
+                Board board = new Board();
+                board.content = content; board.writer = writer; board.pwd = pwd;
+
+                count++;
+
+                Board[] newBoardList = new Board{count];
+                if(count != 1){
+                    for(int index = 0; index <= boardList.length-1; index ++){
+                        newBoardList[index] = boardList[index];
+                    }
+                }
+                newBoardList[count=1] = board;
+                boardList = newBoardList;
+            }
+            else if(choose == 2){
+                for(int index = 0; index <= boardList.length-1;index++){
+                    if(boardList[index] != null){
+                        System.out.printf("작성자 : %s, 내용 : %s%n", boardList[index].writer, boardList[index].content);
+                    }
+                }
+            }
+        }
+    }
+}
+
 <3>
+public Class BoardService4{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        Board[] boardList = null;
+        int count=0;
+        while(true){
+            System.out.println("1.글쓰기 2.글출력 : "); String content  = scan.next();
+            System.out.print("작성자 : "); String writer = scan.next();
+            System.out.print("비밀번호 : "); int pwd = scan.nextInt();
+
+            Board board = new Board();
+            board.content = content; board.writer = writer; board.pwd = pwd;
+
+            count++;
+
+            Board[] newBoardList = new Board[count];
+            if(count != 1){
+                for(int index = 0; index <= boardList.length-1;index++){
+                    newBoardList[index] = boardList[index];
+                }
+            }
+            newBoardList[count-1] = board;
+            boardList = newBoardList;
+        }
+        else if(choose ==2){
+            for(int index = 0; index <= boardList.length-1; index++){
+                if(boardList[index] != null){
+                    System.out.printf("작성자 : %s, 내용 : %s%n",boardList[index].writer,boardList[index].content)''
+                }
+            }
+        }
+    }
+}
+
 <4>
+
+public Class BoardService4{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        Board[] boardList = null;
+        int count = 0;
+        while(true){
+            System.out.println("1.글쓰기 2.글출력 : ");
+            int choose = scan.nextInt();
+            if(choose == 1){
+                System.out.print("내용 : "); String Content = scan.next();
+                System.out.print("작성자 : "); String writer = scan.nest();
+                System.out.print("비밀번호 : "); int pwd = scan.nextInt();
+
+                Board board = new Board();
+                board.content = content; board.writer = writer; board.pwd = pwd;
+
+                count++;
+
+                Board[] newBoardList = new Board[count];
+                if(count != 1){
+                    for(int index = 0; index <= boardList.length-1; index++){
+                        newBoardList[index] = boardList[index];
+                    }
+                }
+                newBoardList[count-1] = board;
+                boardList = newBoardList;
+            }
+            else if(choose ==2){
+                for(int index = 0; index <= boardList.length-1; index++){
+                    if(boarList[index] ~= null){
+                        System.out.printf)("작성자 : %s, 내용 : %s%n ".boardList[index].writer, boardList[index}.content);
+                    }
+                }
+            }
+        }
+    }
+}
 <5>
+public Class BoardService4{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        Board[] boardList = null;
+        int count= 0;
+        while(true){
+            System.out.println("글쓰기 2.글출력 : ");
+            int choose = scan.nextInt();
+            if(choose=1){
+                System.out.print("내용 : "; String content = scan.next();
+                System.out.print("작성자 : "); String writer = scan.next();
+                System.out.print("비밀번호 : "); int pwd = scan.nextInt();
+
+                Board board = new Board();
+                board.content = content; board.writer = writer; board.pwd = pwd;
+
+                count++;
+
+                Board[] newBoardList = new Board[count];
+                if(count !=  1){
+                    for(int  index = 0;  index <= boardList.length-1;index++){
+                        newBoardList[index] = boardList[index];
+
+                    }
+                }
+                newBoardList[count-1] = board;
+                boardList = newBoardList;
+            }
+            else if(choose == 2){
+                for(int index = 0; index <= boardList.length-1; index++){
+                    if(boardList[index] != null){
+                        System.out.print("작성자 : %s, 내용 : %s%n",boardList[index].writer, boardList[index].content);
+                    }
+                }
+            }
+        }
+    }
+}
