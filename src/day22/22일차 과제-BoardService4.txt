@@ -1,0 +1,10 @@
+<1>
+public Class BoardService4{
+    public static void main(String[] args){
+        Scanner scan= new
+    }//main end
+}//class end
+<2>
+<3>
+<4>
+<5>
