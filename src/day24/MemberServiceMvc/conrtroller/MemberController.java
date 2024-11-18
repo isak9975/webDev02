@@ -6,6 +6,7 @@ import day24.MemberServiceMvc.model.MemberDto;
 import java.util.ArrayList;
 
 public class MemberController {
+    //싱글톤 작업_
     private static MemberController memberController = new MemberController();
 
     private MemberController() {}
