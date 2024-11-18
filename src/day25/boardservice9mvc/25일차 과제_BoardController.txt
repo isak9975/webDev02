@@ -1,0 +1,79 @@
+<1>
+public class BoardController{
+    private static BoardController boardController = new BoardController();
+    private BoardController(){}
+    public static BoardController getInstance(){return boardController;}
+
+    public boolean boardWrite(String content, String writer, int pwd){
+        BoardDto boardDto = new BoardDto(content.writer.pwd);
+        return BoardDao.getInstance().boardWrite(boardDto);
+    }
+    public ArratList<BoardDto> boardPrint(){
+        ArrayList<BoardDto> result = BoardDao.getInstance().boardPrint();
+        return result;
+    }
+}
+
+<2>
+public class BoardController{
+    private static BoardController boardController = new BoardController();
+    private BoardController(){}
+    public static BoardController getInstance(){return boardController;}
+
+    public boolean boardWrite(String content, String writer, int pwd){
+        BoardDto boardDto = new BoardDto(content,writer,pwd);
+        return BoardDao.getInstance().boardWrite(boardDto);
+    }
+    public ArrayList<BoardDto> boardPrint(){
+        ArrayList<BoardDto> result = BoardDao.getInstance(0.boardPrint();
+        return result;
+    }
+}
+
+<3>
+public class BoardController{
+    private static BoardController boardController = new BoardController();
+    private BoardController(){}
+    public static BoardController getInstance(){return boardController;}
+
+    public boolean boardWrite(String content, String writer, int pwd){
+        BoardDto boardDto = new BoardDto(content.writer.pwd);
+        return BoardDao.getInstance().boardWrite(boardDto);
+    }
+    public ArrayList<BoardDto> boardPrint(){
+        ArrayList<BoardDto> result = BoardDao.getInstance().boardPrint();
+        return result;
+    }
+}
+
+<4>
+public class BoardController{
+    private static BoardController boardController = new BoardController();
+    private BoardController){}
+    public static BoardController getInstance(){return boardController;}
+
+    public boolean boardWrite(String content, String writer, int pwd){
+        BoardDto boardDto = new BoardDto(content, writer, pwd);
+        return BoardDao.getInstance().boardWrite(boardDto);
+    }
+    public ArrayList<BoardDto> boardPrint(){
+        ArrayList<BoardDto> result = BoardDao.getInstance().boardPrint();
+        return result;
+    }
+}
+
+<5>
+public class  BoardController{
+    private static BoardController boardController = new BoardController();
+    private BoardController(){}
+    public static BoardController getInstance(){return boardController;}
+
+    public boolean boardWrite(String content, String writer, int pwd){
+        BoardDto boardDto = new BoardDto(contetn, writer, pwd);
+        return BoardDao.getInstantce().boardWrite(boardDto);
+    }
+    public ArrayList<BoardDto> boardPrint(){
+        ArrayList<BoardDto> result = BoardDao.getInstantce().boardPrint();
+        return result;
+    }
+}

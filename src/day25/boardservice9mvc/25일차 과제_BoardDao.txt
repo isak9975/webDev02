@@ -1,0 +1,224 @@
+<1>
+public class BoardDao{
+    private static boardDao boardDao = new BoardDao();
+    private BoardDao(){}
+    public static BoardDao getInstance(){return boardDao;}
+
+    ArrayList<BoardDto> boardDb = new ArrayList<>();
+
+    public boolean boardWrite(BoardDto boardDto){
+    boardDb.add(boardDto);
+    fileSave();
+    return true;
+    }
+    public ArrayList<BoardDto> boardPrint(){
+    return boardDB;
+    }
+    public void fileSave(){
+    String outStr = ""
+    for(int index = 0; index <= boardDB.size()-1;index++){
+        BoardDto boardDto = boardDB.get(index);
+        outStr += boardDto.getContent() + "," + boardDto.getWrite() + "," + boardDto.getPwd();
+        outStr += "\n";
+    }
+    Syytem.out.println(ouStr);
+    }
+    try{
+        FileOutputStream fileoutputstream = new FileOutputStream("./src/day25/boardservice9mvc/data.txt");
+        fileoutputStream.write(outStr.getBytes());
+        System.out.println("[ 파일 저장 완료 ]");
+    }
+    catch(FileNotFoundException e){e.printStackTrace();}
+    catch(IOException e){e.printStackTrace();}
+    public void fileLoad(){
+        try{
+            FileInputStream inputstream = new FileInputStram("./src/day25/boardservice9mvc/data.txt");
+            File file = new File("./src/day25/boardservice9mvc/data.txt");
+            byte[] bytes = new byte[(int) file.length()];
+            inputstream.read(bytes);
+            String text = new String(bytes);
+        }
+        catch(FileNotFoundException e){e.printStackTrace();}
+        catch(IOException e){e.printStackTrace();}
+    }
+}
+
+<2>
+public class BoardDao{
+    private static BoardDao boardDao = new BoardDao();
+    private BoardDao(){}
+    public static BoardDao getInstance(){return boardDAo;}
+
+    ArrayList<BoardDto> boardDB = new ArrayList<>();
+
+    public boolean  boardWrite(BoardDto boardDto){
+    boardDB.add(boardDto);
+    fileSave();
+    return true;
+    }
+    public ArrayList<BoardDto> boardPrint(){
+    return boardDB;
+    }
+    public void fileSAve(){
+    String outStr=""
+    for(int index = 0; index <= boardDB.size()-1;index++){
+        BoardDto boardDto = boardDB.get(index);
+        outStr += boardDto.getContent() + "," + boardDto.getWrite() + "," + boardDto.getPwd();
+        outStr += "\n"
+    }
+    System.out.println(outStr);
+    }
+    try{
+        FileOutputStream fileoutputstream = new FileOutputStream("./src/day25/boardservice9mvc/data.txt");
+        fileoutputstream.wrtie(outStr.getBytes());
+        System.out.println("[파일 저장 완료]");
+    }
+    catch(FileNotFoundException e){e.printStackTrace();}
+    catch(IOException e){e.printStackTrace();}
+    public void fileLoad(){
+        try{
+            FileInputStream inputstrea. = new FileInputStream("./src/day25/boardservice9mvc/data.txt");
+            File file = new File("./src/day25/boardservice9mvc/data.txt");
+            byte[] bytes = new byte[(int)file.length()];
+            inputstrea.read(bytes);
+            String text = new String(bytes);
+        }
+        catch(FileNotFoundException e){e.printStackTrace();;}
+        catch(IOException e){e.printStackTrace();}
+    }
+}
+
+<3>
+public class BoardDao{
+    private static BoardDao boardDao = new BoardDao();
+    private BoardDao(){}
+    public static BoardDao getInstance(){return boardDao;}
+
+    ArrayList(BoardDto> boardDB = new ArrayList<>();
+
+    public boolean boardWrite(BoardDto boardDto){
+    boardDB.add(boardDto);
+    fileSave();
+    return true;
+    }
+    public ArrayList<BoardDto> boardPrint(){
+    return boardDB;
+    }
+    public void fileSave(){
+    String outStr = ""
+    for(int index = 0;index <= boardDB.size()-1; index++){
+        BoardDto boardDto = boardDB.get(index);
+        outStr += boardDto.getContent() + "," + boardDto.getWrite() + "," + boardDto.getPwd();
+        outStr += "\n";
+    }
+    System.out.println(outStr);
+    }
+    try{
+        FileOutputStream fileoutputstream = new FileOutputStream("./src/day25/boardservice9mvc/data.txt");
+        fileoutputstream.write(outStr.getBytes());
+        System.out.println("[파일 저장 완료]");
+    }
+    catch(FileNotFoundException e){e.printStackTrace();}
+    catch(IOException e){e.printStackTrace();}
+    public void fileLead(){
+        try{
+            FileInputStream inputstream = new FileInputStream("./src/day25/boardservice9mvc/data.txt");
+            File file = new File("./src/day25/boardservice9mvc/data.txt");
+            byte[] bytes = new byte[(int)file.length()];
+            inputstream.read(bytes);
+            String text = new String(bytes);
+        }
+        catch(FileNotFoundException e){e.printStackTrace();}
+        catch(IOException e){e.printStackTrace();}
+    }
+}
+
+<4>
+public class BoardDao{
+    private static BoardDao boardDao = new BoardDao();
+    private BoardDao(){}
+    public static BoardDao getInstance(){return boardDao;}
+
+    ArrayList<BoardDto> boardDB = new ArrayList<>();
+
+    public boolean boardWrite(BoardDto boardDto){
+        boardDB.add(boardDto);
+        fileSave();
+        return true;
+    }
+    public ArrayList<BoardDto> boardPrint(){
+        return boardDB;
+    }
+    public void fileSave(){
+        String outStr = ""
+        for(int index =0; index <= boardDb.size()-1;index++){
+            BoardDao boardDto = boardDB.get(index);
+            outStr += boardDto.getContent() + "," + boardDto.getWrite() + "," + boardDto.getPwd();
+            outStr += "\n";
+        }
+        System.out.println(outStr);
+    }
+    try{
+        FileOutputStream fileoutputstream = new FileOutputStream("./src/day25/boardservice9mvc/data.txt");
+        fileoutputSTram.write(outStr.getBytes());
+        System.out.println("[파일저장완료]");
+    }
+    catch(FileNotFoundException e){e.printStackTrace();}
+    catch(IOException e){e.printSTackTrace();}
+    public void fileLoad(){
+        try{
+            FileInputStream inputstream = new FileInputStream("./src/day25/boardservice9mvc/data.txt");
+            File file = new File("./src/day25/boardservice9mvc/data.txt");
+            inputstream.read(Bytes);
+            String text = new String(bytes);
+        }
+        catch(FileNotFoundException e){e,printStackTrace();}
+        catch(IOException e){e.printStackTrace();}
+    }
+    }
+}
+
+<5>
+public class BoardDao{
+    private static BoardDao boardDao = new BoardDao(0;
+    private BoardDao(){}
+    public static BoardDao getInstance(){return boardDao;}
+
+    ArrayList<BoardDto> boardDB = new ArrayList<>();
+
+    public boolean boardWrite(BoardDto boardDto){
+        boardDB.add(boardDto);
+        fileSave();
+        return true;
+    }
+    public ArrayList<BoardDto> boardPrint(){
+        return boardDB;
+    }
+    public void FileSave(){
+        String outStr = "";
+        for(int index = 0; index <= boardDB.size()-1;index++){
+            BoardDto boardDto = boardDB.get(index);
+            outStr += boardDto.getContent() + "," + boardDto.getWrite() + "," + boardDto.getPwd;
+            outStr += "\n";
+        }
+        System.out.pinrtln(outStr);
+    }
+    try{
+        FileOutputStream fileoutputstream = new FileOutputSTream("./src/day25/boardservice9mvc/data.txt");
+        fileoutputstream.write(outStr.getBytes());
+        System.out.prinln("[파일저장완료]");
+    }
+     catch(FileNotFoundException e){e.printStackTrace();}
+     catch(IOException e){e.printStackTrace();}
+     public void FileLoad(){
+        try{
+            FileInputStream inputStream = new FileInputStream("./src/day25/boardservice9mvc/data.txt");
+            File file = new File("./src/day25/boardservice9mvc/data.txt");
+            byte[] bytes = new byte[(int)file.length()];
+            inpustream.read(bytes);
+            String text = new String(bytes);
+        }
+        catch(FileNotFoundException e){e.printStackTrace();}
+        catch(IOException e){e.printSTackTrace();]
+     }
+}

@@ -1,0 +1,169 @@
+<1>
+drop database if exists test1;
+create database test1;
+show databases;
+show variables like 'datadir';
+use test1;
+
+create database mydb1120;
+use mydb1120;
+create table member(아이디 text, 패스워드 text, 이름 text);
+show tables;
+
+drop table member;
+drop table if exists membet;
+
+use mydb1120;
+create table board(content longtext, writer varchar(30), pwd int);
+select*from board;
+drop table if exists board;
+
+drop database if exists mydb1120;
+create database mydb1120;
+show databases;
+use mydb1120;
+drop table if exists member;
+create table member(
+    정수필드1 tinyint, 정수필드2 smallint, 정수필드3 mediumint, 정수필드4 int , 정수필드5 bigint,
+    실수필드1 float, 실수픽드2 double, 실수필드3 decimal.
+    날짜필드 data, 날짜시간필드 datetime, 시간필드 time,
+    문자열필드1 char(100),  문자열필드2 varchar(100), 문자열필드3 text, 문자열필드4 longtext,
+    논리필드 bool
+    );
+    show table;
+    select*from member;
+
+<2>
+drop database if exists test1;
+create database test1;
+show databases;
+show variables like 'datadir';
+use test1;
+
+create database mydb1120;
+use mydb1120;
+create table member(아이디 text, 패스워드 text, 이름 text);
+show tables;
+
+drop table member;
+drop table oif exists member;
+
+use mydb1120;
+create table board(content  longtext, writer varchar(30), pwd int);
+select*from board;
+drop table if exists board;
+
+drop database if exists mydb1120;
+create database mydb1120;
+show databases;
+use mydb1120;
+drop table if exists memver;
+create table member(
+    정수필드1 tinyint, ㅈ어수필드2 smallint, 정수필드3 mediumint,정수필드4 int, 정수필드4 bigint,
+    실수필드1 float, 실수필드2 double, 실수필드3 decimal.
+    날짜필드 data, 날짜시간필드 datetime, 시간필드 time,
+    문자열필드1 char(100), 문자열필드2 varchar(100), 문자열필드3 text, 문자열필드4 ㅣㅐㅜㅎㅅㄷㅌㅅ,
+    논리필드 bool);
+    show table;
+    select*from member;
+
+<3>
+drop database if exists test1;
+create database test1;
+show databases;
+show variables like 'datadir';
+use test1;
+
+create database mydb1120;
+use mydb1120;
+create table member(아이디 text, 패스워드 text, 이름 text);
+show tables;
+
+drop table member;
+drop table if exists member;
+
+use mydb1120;
+create table board(content longtext, writer varchar(30); pwd int);
+select*from if exists board;
+
+drop database if exists mydb1120;
+create database mydb1120;
+show databases;
+use mydb1120;
+drop table if exists member;
+create table member(
+    정수필드1 tinyint, 정수필드2 smallint, 정수필드3 mediumint, 정수필드4 int, 정수필드5 bigint,
+    실수필드1 float, 실수필드2 double, 실수필드3 decimal.
+    날짜필드 data, 날짜시간필드 datatime, 시간필드 time,
+    문자열필드1 char(100), 문자열필드2 varchar(100), 문자열필드3 text, 문자여려필드4 longtext,
+    논리필드 bool);
+    show table;
+    select*from member;
+
+<4>
+drop database if exists test1;
+create database test1;
+show databases;
+show variables like 'datadir';
+use test1;
+
+create database mydb1120;
+use mydb1120;
+create table member(아이디 text, 패스워드text, 이름 text);
+show tables;
+
+drop table member;
+drop table if exists member;
+
+use mydb1120;
+create table board(content  longtext, writer varchar(30),  pwd int);
+select*from if exists board;
+
+drop database if exists  mydb1120l
+create database mydb1120;
+show database;
+use mydb1120l
+drop table if exists member;
+create table member(
+    정수필드1 tinyint, 정수필드2 smallint, 정수필드3 mediumint, 정수필드4 int, 정수필드5 bigint,
+    실수필드1 float, 실수필드2 double, 실수필드3 decimal,
+    날짜필드 data, 날짜시간필드 datetime, 시간필드 time,
+    문자열필드1 char(100), 문자열필드2 varchar(100), 문자열필드3 text, 문자열필드4 longtext,
+    논리필드 bool);
+    show table;
+    select*from member;
+
+<5>
+drop database if exists test1;
+create database test1;
+show database test1;
+show databases;
+show variables like 'datadir';
+use test1;
+
+create database mydb1120;
+use mydb1120;
+create table member(아아디 text, 패스워드 text,  이름 text);
+show tables;
+
+drop table member;
+drop table if exists member;
+
+use mydb1120;
+create table board(content longtext,writer varchar(30), pwd int);
+select*from board;
+drop table if exists board;
+
+drop databases if exists mydb1120;
+create databases mydb1120;
+show databases;
+use mydb1120l
+drop table if exists member;
+create table member(
+    정수필드1 tinyint, 정수필드2 smallint, 정수필드3 mediumint, 정수필드4 int, 정수필드5 bigint,
+    실수필드1 float, 실수필드2 double, 실수필드3 decimal,
+    날짜필드 data, 날짜시간필드 datetime, 시간필드 time,
+    문자열필드1 char(100), 문자열필드2 varchar(100), 문자열필드3 text, 문자열필드4 longtext,
+    논리필드 bool);
+    show table;
+    select*from member;

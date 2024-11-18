@@ -1,0 +1,95 @@
+<1>
+public class BoardDto{
+    private String content;
+    private String writer;
+    private int pwd;
+
+    public BoardDto(){}
+    public BoardDto(String content){this.content = content;}
+    public BoardDto(String content, String writer){this.content = content; this.writer = writer;}
+    public BoardDto(String content, String writer, int pwd){this.content = content; this.writer = writer; this.pwd = pwd;}
+
+    public String getContent(){return content;}
+    public String getWrite(){return wrtie;}
+    public int getPwd(){return pwd;}
+    public void setContent(String content){this.content = content;}
+    public void setWrite(String write){this.write = write;}
+    public void setPwd(int pwd){this.pwd = pwd;}
+
+}
+
+<2>
+public class BoardDto{
+    private String content;
+    private String writer;
+    private int pwd;
+
+    public BoardDto(){}
+    public BoardDto(String content){this.content = content;}
+    public BoardDto(String content, String write){this.content = content; this.write = write;}
+    public BoardDto(String content, String write,int pwd){this.content = content; this.write = write; this.pwd=pwd;}
+
+    public String getContent(){return content;}
+    public String getWrite(){return write;}
+    public int getPwd(){return pwd;}
+    public void setContent(String content){this.content = content;}
+    public void setWrite(String write){this.write = write;}
+    public void setPwd(int pwd){this.pwd = pwd;}
+}
+
+<3>
+public class BoardDto{
+    private String content;
+    private String writer;
+    private int pwd;
+
+    public BoardDto(){}
+    public BoardDto(String content){this.content = content;}
+    public BoardDto(String content, String write){this.content = content; this.write = write;}
+    public BoardDto(String content, String write, int pwd){this.content = content; this.write = write; this.pwd = pwd;}
+
+    public String getContent(){return content;}
+    public String getWrite(){return write;}
+    public int getPwd(){return pwd;}
+    public void setContent(String content){this.content= content;}
+    public void setWrite(String write){this.write = write;}
+    public void setPwd(int pwd){this.pwd = pwd;}
+}
+
+<4>
+public class BoardDto{
+    private String content;
+    private String writer;
+    private int pwd;
+
+    public BoardDto(){}
+    public BoardDto(String content){this.content = content;}
+    public BoardDto(String Content, STring write){this.content= content; this.write= write;}
+    public BoardDto(String content, String write, ind pwd){this.content = content; this.write = write; this.pwd = pwd;}
+
+    public String getContent(){return content;}
+    public String getWrite(){return write;}
+    public int getPwd(){return pwd}
+    public void setContent(String content){this.content= content;}
+    public void setWrite(String write){this.write = write;}
+    public void setPwd(int pwd){this.pwd = pwd;}
+}
+
+<5>
+public class BoardDto{
+    private String content;
+    private String writer;
+    private int pwd;
+
+    public BoardDto(){}
+    public BoardDto(String content){this.content = content;}
+    public BoardDto(String content,String write){this.content = content; this.write = write;}
+    public BoardDto(String content, String write, int pwd){this.content = content; this.write = write; this.pwd = pwd;}
+
+    public String getContent(){return content;}
+    public String getWrite(){return write;}
+    public int getPwd(){return pwd;}
+    public void setContent(String content){this.content = content;}
+    public void setWrite(String write){this.write = write;}
+    public void setPwd(int pwd){this.pwd = pwd;}
+}

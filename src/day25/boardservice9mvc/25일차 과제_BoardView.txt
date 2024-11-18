@@ -1,0 +1,171 @@
+<1>
+public class BoardView{
+    private static BoardView boardview = new BoardView();
+    private BoardView(){}
+    public static BoardView getInstance(){return boardview;}
+
+    Scanner scan = new Scanner(System.in);
+
+    public void mainpage(){
+        BoardDao.getInstance().fileLoad();
+        System.out.println("데이터 로드 완료");
+        while(true){
+            System.out.print("1.게시물 등록 2.게시물 출력 : ");
+            int choose = scan.nextInt();
+            if(choose == 1){boardWrite();}
+            else if(choose == 2){boardPrint();}
+        }
+    }
+    void boardWrite(){
+        System.out.println("게시물 내용 : "); String content = scan.next();
+        System.out.println("게시물 작성자 : "); String writer = scan.next();
+        System.out.println("게시물 비밀번호 : "); int pwd - scan.nextInt();
+
+        boolean result = BoardController.getInstance().boardWrite(content.writer,pwd);
+    }
+    void boardPrint(){
+        ArrayList<BoardDto> result = BoardController.getInstance().boardPrint();
+        for(int index = 0; index <= result.size()-1; index++){
+            System.out.print("게시물 : " + result.get(index).getContent());
+            System.out.println("작성자 : " + result.get(index).getWriter());
+        }
+    }
+}
+
+<2>
+public class BoardView{
+    private static BoardView boardview = new BoardView();
+    private BoardView(){}
+    public static BoardView getInstance(){return boardview;}
+
+    Scanner scan = new Scanner(System.in);
+
+    public void mainpage(){
+        BoardDao.getInstance().fileLoad();
+        System.out.prinln("데이터 로드 완료");
+        while(true){
+            System.out.print("1.게시물 등록 2.게시물 출력 : ");
+            int choose = scan.nextInt();
+            if(choose==1){boardWrite();}
+            else if(choose == 2){boardPrint();}
+        }
+    }
+    void boardWrite(){
+        System.out.println("게시물 내용 : "); String content = scan.next();
+        System.out.println("게시물 작성자 : ");  String writer = scan.next();
+        System.out.println("게시물 비밀번호 : "); int pwd = scan.nextInt():
+
+        boolean result = BoardController.getInstance().boardWrite(content,write,pwd);
+    }
+    void boardPrint(){
+        ArrayList<BoardDto> result = BoardController.getInstance().boardPrint();
+        for(int index = 0; index <= result.size()-1;index++){
+            System.out.print("게시물 : " + result.get(index).getContent());
+            System.out.println("작성자 : " + result.get(index).getWriter());
+        }
+    }
+}
+
+<3>
+public class BoardView{
+    private static BoardView boardview = new BoardView();
+    private BoardView(){}
+    public static BoardView getInstance(){return boardview;}
+
+    Scanner scan = new Scanner(System.in);
+
+    public void mainpage(){
+        BoardDao.getInstance().fileLoad();
+        System.out.println("데이터 로드 완료");
+        while(true){
+            System.out.print("1.게시물 등록 2.게시물 출력 : ");
+            int choose = scan.nextInt();
+            if(choose ==1){boardWrite();}
+            else if (choose ==2) { boardPrint();}
+        }
+    }
+    void boardWrite(){
+        System.out.println("게시물 내용 : "); String content = scan.next();
+        System.out.println("게시물 작성자 : "); String writer = scan.next();
+        System.out.println("게시물 비밀번호 : "); int pwd = scan.nextInt();
+
+        boolean result - BoardController.getInstance().boardWrite(content.writer.pwd);
+    }
+    void boardPrint(){
+        ArrayList<BoardDto> result = BoardController.getInstance().boardPrint();
+        for(int index = 0; index <= result.size(0-1' index++){
+            System.out.print("게시물 : " + result.get(index).getContent());
+            System.out.println("작성자 : " + result.get(index).getWrite());
+        }
+    }
+}
+
+<4>
+public class BoardView{
+    private static BoardView boardview = new BoardView();
+    private BoardView(){}
+    public static BoardView getInstance(){return boardview;}
+
+    Scanner scan = new Scanner(System.in);
+
+    public void mainpage(){
+        BoardDao.getInstsance(0.fileLoad();
+        System.out.println("데이터 로드 완료");
+        while(true){
+            System.out.print("1.게시물 등록 2.게시물 출력 : ");
+            int choose = scan.nextInt();
+            if(choose==1){boardWrite()}
+            else if(choose == 2){boardPrint();}
+        }
+    }
+    void boardWrite(){
+        System.out.println("게시물 내용 : "); String content = scan.next();
+        System.out.println("게시물 작성자 : "); String writer = scan.next();
+        System.out.println("게시물 비밀번호 : "); int pwd = scan.nextInt();
+
+        boolean result = BoardController.getInstance().noardWrite(content,write,pwd);
+    }
+    void boardPrint(){
+        ArrayList<BoardDto> result = BoardController .getInstance().boardPrint();
+        for(int index = 0 index <= result.size()-1; index++){
+            System.out.print("게시물 : " + result.get(index).getContent());
+            System.out.println("작성자 : "+ result.get(index).getWriter());
+        }
+    }
+    }
+}
+
+<5>
+public class BoardView{
+    private static BoardView boardview = new BoardView();
+    private BoardView(){}
+    public static BoardView getInstance(){return boardview;}
+
+    Scanner scan = new Scanner(System.in);
+
+    public void mainpage(){
+        BoardDao.getInstance().fileLoad();
+        System.out.println("데이터 로드 완료");
+        while(true){
+            System.out.print("1.게시물 등록 2.게시물 출력 : ");
+            int choose = scan.nextInt();
+            if(choose == 1){boardWrite();}
+            else if(choose==2){boardPrint();}
+        }
+    }
+    void boardWrite(){
+        System.out.println("게시물 내용 : "); String content = scan.next();
+        System.out.println("게시물 작성자 : "); String writer = scan.next();
+        System.out.println("게시물 비밀번호 : "); int pwd = scan.nextInt();
+
+        boolean result = BoardController.getInstance().boardWrite(content.writer,pwd);
+
+    }
+    void boardPrint(){
+        ArrayList<BoardDto> result = BoardController.getInstance().boardPrint();
+        for(int index = 0; index <= result.size()-1;index++){
+            System.out.print("게시물 : " + result.get(index).getContent());
+            System.out.println("작성자 : " + result.get(index).getWriter());
+        }
+    }
+}
