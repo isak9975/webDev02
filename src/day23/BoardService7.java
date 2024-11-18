@@ -37,15 +37,11 @@ public class BoardService7 {
             }
         }
     }//main end
-
     static void boardwrite() {
 
-        System.out.print("내용 : ");
-        String content = scan.next();
-        System.out.print("작성자 : ");
-        String writer = scan.next();
-        System.out.print("비밀번호: ");
-        int pwd = scan.nextInt();
+        System.out.print("내용 : "); String content = scan.next();
+        System.out.print("작성자 : "); String writer = scan.next();
+        System.out.print("비밀번호: "); int pwd = scan.nextInt();
 
         Board board = new Board(content, writer, pwd); //- 입력 받은 내용으로 게시물 객체 생성
 

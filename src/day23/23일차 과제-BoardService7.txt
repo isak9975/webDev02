@@ -1,0 +1,167 @@
+<1>
+public class BoardService7{
+    static Scanner scan = new Scanner(System.in);
+    static ArrayList<Board> boardList = new ArrayList<>();
+
+    public static void main(String[] args){
+        while(true){
+            System.out.println("1.글쓰기, 2.글출력 : ");
+            int choose = scan.nextINt();
+
+            if(choose == 1){
+                boardWrite();
+            }else if(choose == 2){
+            boardPrint();
+            break;
+            }
+        }
+    }
+    static void boardWirte(){
+        System.out.print("내용 : "); String content = scan.next();
+        System.out.print("작성자 : "; String wrtier = scan.next();
+        System.out.print("비밀번호 : "); int pwd = scan.nextInt();
+
+        Board board = new Board(content, writer, pwd);
+
+        boardList.add(board);
+    }
+    static void boardPrint(){
+        for(int index = 0; index <= boardList.size()-1;index++){
+            System.out.printf("작성자 : %s, 내용 : %s%n",boardList.get(index).getWrtier(),boardList.get(index).getContent(););
+        }
+    }
+}
+
+<2>
+public class BoardService7{
+    static Scanner scan = new Sanner(System.in);
+    static ArrayList<Board> boardList = new ArrayList<>();
+    public static void main(String[] args){
+    while(true){
+        System.out.println("1.글쓰기 2.글출력 :");
+        int choose = scan.nextInt();
+        if(choose == 1){
+            boardWrite();
+        }
+        else if(choose == 2){
+            boardPrint();
+            break;
+        }
+    }
+    }
+    static void boardwrite(){
+        System.out.print("내용 : "); String content = scan.next();
+        System.out.print("작성자 : "); String writer = scan.next();
+        System.out.print("비밀번호 : "); int pwd = scan.nextInt();
+
+        Board board= new Board(content, writer, pwd);
+
+        boardList.add(board);
+    }
+    static void boardPinrt(){
+        for(int index=0; index <= boardList.size()-1;index++){
+            System.out.printf("작성자 : %s, 내용 : %s%n",boardList.get(index).getWrtier(),boardList.get(index).getContentn(););
+        }
+    }
+}
+
+<3>
+public class BoardService7{
+static Scanner scan = new Scanner(System.in);
+static ArrayList<Board> = new ArrayList<>();
+    public static void main(String[] args){
+        while(true){
+            System.out.println("1. 글쓰기, 2. 글출력 : ");
+            int choose == scan.nextInt();
+            if(choose ==1 ) {
+                boardWrite();
+            }
+            else if(choose == 2){
+                boardPrint();
+                break;
+            }
+        }
+    }
+    static void boardwrite(){
+        System.out.print("내용 : "); String content = scan.next();
+        System.out.print("작성자 : "); String writer = scan.next();
+        System.out.print("비밀번호 : "); int pwd = scan.nextInt();
+
+        Board board = new Board(content, writer, pwd);
+
+        boardList.add(board);
+    }
+    static void boardPrint(){
+        for(int index = 0; index <= boardList.size()-1;index++){
+            System.out.printf("작성자 :  %s, 내용 : %s%n",boardList.get(index).getWrtier(),boardList.get(index).getContent(););
+        }
+    }
+}
+
+<4>
+public class BoardService7{
+    static Scanner scan = new Scanner(System.in);
+    static ArrayList<Board> boardList = new ArrayList<>();
+    public static void main(String[] args){
+        while(true){
+            System.out.println("1.글쓰기 2. 글출력 : ");
+            int choose = scan.nextInt();
+
+            if(choose == 1){
+                boardWrite();
+            }
+            else if(choose == 2){
+                boardPrint();
+                break;
+            }
+        }
+    }
+    static void boardWrtie(){
+        System.out.print("내용 : "); String content = scan.next();
+        System.out.print("작성자 : "); String wrtier = scan.next();
+        System.out.print("비밀번호 : "); int pwd = scan.nextInt();
+
+        Board board = new Board(content, writer, pwd);
+
+        boardList.add(board);
+    }
+    static void boardPrint(){
+        for(int index = 0; index < = boardList.size()-1; index++){
+            System.out.printf("작성자 : %s, 내용 : %s%n",boardList.get(index).getWrtier(),boardList.get(index).getContent(););
+        }
+    }
+}
+
+<5>
+public class BoardService7{
+    static Sacnner scan = new Scanner(System.in);
+    static ArrayList<Board> boarList = new ArrayList<>();
+    public static void main(String[] args){
+        while(true){
+            System.out.println("1.글쓰기 2.글출력 : ");
+            int choose = scan.nextInt();
+            if(choose == 1){
+                boardwirte();
+
+            }
+            else if(choose == 2){
+                boardPrint();
+                break;
+            }
+        }
+    }
+    static void boardWrtie(){
+        System.out.print("내용 : "); String content = scan.next();
+        System.out.print("작성자 : ") ; String wrtiert = scan.next();
+        System.out.print("비밀번호 :" ); int pwd = scan.nextInt();
+
+        Board board = new Board(content,writer,pwd);
+
+        boardList.add(board);
+    }
+    static void boardPrint(){
+        for(int index = 0; index < = boardList.size()-1;index++){
+            SYstem.out.printf("작성자 : %s, 내용 : %s%n",boardList.get(index).getWrtier(),boardList.get(index).getContetn(););
+        }
+    }
+}
