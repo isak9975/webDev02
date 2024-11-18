@@ -1,5 +1,7 @@
 package day24.MemberServiceMvc.model;
 
+import java.util.Objects;
+
 public class MemberDto {
     private String name;
     private int pwd;
@@ -30,5 +32,21 @@ public class MemberDto {
                 '}';
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if(o instanceof MemberDao){
+            MemberDao temp = (MemberDao)o;
 
+        }
+        return true;
+//        if (this == o) return true;
+//        if (o == null || getClass() != o.getClass()) return false;
+//        MemberDto memberDto = (MemberDto) o;
+//        return pwd == memberDto.pwd && Objects.equals(name, memberDto.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, pwd);
+    }
 }

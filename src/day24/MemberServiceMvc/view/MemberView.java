@@ -40,22 +40,21 @@ public class MemberView {
         System.out.println("아이디 입력 : "); String name = scan.next();
         System.out.println("비밀번호 입력 : "); int pwd = scan.nextInt();
 
+        MemberDto memberDto = new MemberDto(name,pwd);
 
 
         //아이디, 비밀번호가 같은지 판별
-        if(false){
+        if(MemberDao.getInstance().memberPrintr().contains(memberDto)){
             System.out.println("로그인 성공");
         }
         else{
-            MemberDto memberDto = new MemberDto(name,pwd);
-            System.out.println(memberDto);
-            boolean result1 = MemberDao.getInstance().memberPrintr().equals(memberDto);
-            System.out.println(result1);//false
-            boolean result = MemberDao.getInstance().memberPrintr().contains(memberDto);
-            System.out.println(result);//flase
-            MemberDao.getInstance().memberPrintr().
-            System.out.println(MemberDao.getInstance().memberPrintr()); //멤버 함수 sign , 123
-            System.out.println(MemberDao.getInstance().equals(MemberDao.getInstance().memberPrintr()));// false
+//            System.out.println(memberDto);
+//            boolean result1 = MemberDao.getInstance().memberPrintr().equals(memberDto);
+//            System.out.println(result1);//false
+//            boolean result = MemberDao.getInstance().memberPrintr().contains(memberDto);
+//            System.out.println(result);//flase
+//            System.out.println(MemberDao.getInstance().memberPrintr()); //멤버 함수 sign , 123
+//            System.out.println(MemberDao.getInstance().equals(MemberDao.getInstance().memberPrintr()));// false
             System.out.println("아이디 또는 비밀번호가 다릅니다.");
             System.out.println("처음부터 다시 진행 해주세요");
         }
