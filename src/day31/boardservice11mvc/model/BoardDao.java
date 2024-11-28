@@ -1,4 +1,4 @@
-package day29.boardservice10mvc.model;
+package day31.boardservice11mvc.model;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -69,7 +69,7 @@ public class BoardDao {
                                         String wrtier = rs.getString("writer"); // 현재 조회중인 레코드의 게시물번호(writer)필드 값 호출
                                         int pwd = rs.getInt("pwd");// 현재 조회중인 레코드의 게시물번호(pwd)필드 값 호출
                                         //7. 각 레코드의 호출된 필드값들을 객체화 --> DTO 생성
-                                        day29.boardservice10mvc.model.BoardDto boardDto = new day29.boardservice10mvc.model.BoardDto(content,wrtier,pwd);
+                                        BoardDto boardDto = new BoardDto(num,content,wrtier);
                                         //8. 1개 레코드를 DTO 객체로 변환도니 DTO를 리스트에 저장
                                         list.add(boardDto);
                                         }
@@ -81,53 +81,35 @@ public class BoardDao {
 
                         }
 
+public boolean boardDelete(int deleteNum){
+        //1. SQL 작성
+                String sql = "delete from board where num = ?;";
+        try {
+                PreparedStatement ps = connection.prepareStatement(sql);
+                //2. SQL 기재
+                ps.setInt(1,deleteNum);
+                //3. 기재된 SQL 조작
+                int result = ps.executeUpdate(); //delete 실행 수 레코드 개수를 반환
+                if(result==1){return true;}
+        }
+        catch(SQLException e){e.printStackTrace();}
+        //4. SQL 조작
+        //5. 완료
+        return false;
 
 }
-
-/*
-<1>
-public class BoardDao{
-    private Connection cn;
-    private static BoardDao boardDao = new BoardDao();
-    private Board(){
-        try{
-            Class.forName("com.mysql,cj,jdbc,Driver");
-            cn=DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb1125","root" , "1234");
-            System.out.println("DB 연동 성공");
-        }
-        catch(ClassNotFoundException e){System.out.println("연동실패");e.printStackTrace();}
-    }
-    public static BoardDao getInstance(){return boardDao;}
-
-   public boolean boardWrite(BoardDto boardDto){
-        String sql = "insert into board(content,writer,pwd)values(?,?,?)";
-        trt{
-            PreparedStatement ps = cn.prepareStatement(sql);
-            ps.setString(1,boardDto.getContent());
-            ps.setString(2,boardDto.getWriter());
-            ps.setInt(3,boardDto.getPwd());
-            ps.executeUpdate();
-        }
-        catch(SQLException e){e.printStackTrace();return false;}
-        return true;
-   }
-   public ArrayList<BoardDto> boardPrint(){
-    String sql = "select * from board ";
-    ArrayList<BoardDto> list = new ArrayList<>();
-    try{
-        PreparedStatement ps = ns.prepareStatement(sql);
-        ResultSet rs = ps.executeQuery(sql);
-        while(rs.next()){
-            int num = rs.getInt("num");
-            String content = rs.getString("content");
-            String writer = rs.getString("writer");
-            int pwd = rs.getInt("pwd");
-            BoardDto boardDto = new BoardDto(content,writer,pwd);
-            list.add(boardDto);
-        }
-        rs.close();
-   }
-   catch(SQLException e){e.printStackTrace();}
-   return list;
+public boolean boardUpdate(int updateNum, String updateContent){
+                String sql = "update board set content = ? where num =?;";
+                try {
+                        PreparedStatement ps = connection.prepareStatement(sql);
+                        ps.setInt(2, updateNum);
+                        ps.setString(1, updateContent);
+                        int result = ps.executeUpdate();
+                        if (result == 1) {
+                                return true;
+                        }
+                }
+                catch(SQLException e){e.printStackTrace();}
+                return false;
 }
-*/
+}

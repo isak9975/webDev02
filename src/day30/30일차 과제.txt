@@ -1,0 +1,231 @@
+<1>
+public class BoardDao{
+    private Connection cn;
+    private static BoardDao boardDao = new BoardDao();
+    private Board(){
+        try{
+            Class.forName("com.mysql,cj,jdbc,Driver");
+            cn=DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb1125","root" , "1234");
+            System.out.println("DB 연동 성공");
+        }
+        catch(ClassNotFoundException e){System.out.println("연동실패");e.printStackTrace();}
+    }
+    public static BoardDao getInstance(){return boardDao;}
+
+   public boolean boardWrite(BoardDto boardDto){
+        String sql = "insert into board(content,writer,pwd)values(?,?,?)";
+        trt{
+            PreparedStatement ps = cn.prepareStatement(sql);
+            ps.setString(1,boardDto.getContent());
+            ps.setString(2,boardDto.getWriter());
+            ps.setInt(3,boardDto.getPwd());
+            ps.executeUpdate();
+        }
+        catch(SQLException e){e.printStackTrace();return false;}
+        return true;
+   }
+   public ArrayList<BoardDto> boardPrint(){
+    String sql = "select * from board ";
+    ArrayList<BoardDto> list = new ArrayList<>();
+    try{
+        PreparedStatement ps = ns.prepareStatement(sql);
+        ResultSet rs = ps.executeQuery(sql);
+        while(rs.next()){
+            int num = rs.getInt("num");
+            String content = rs.getString("content");
+            String writer = rs.getString("writer");
+            int pwd = rs.getInt("pwd");
+            BoardDto boardDto = new BoardDto(content,writer,pwd);
+            list.add(boardDto);
+        }
+        rs.close();
+   }
+   catch(SQLException e){e.printStackTrace();}
+   return list;
+}
+
+<2>
+public class BoardDto{
+    private Connection cn;
+    private static BoardDao boardDao = new BoardDao();
+    private Board(){
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            cn=DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb1125","root","1234";
+            System.out.println("DB 연동 성공");
+        }
+        catch(ClassNotFoundException e){System.out.println("연동실패");e.printStackTrace()};
+    }
+    public boolean boardWrite(BoardDto boardDto){
+        String sql = "insert into board(content,writer,pwd")values(?,?,?)");
+        try{
+            PreparedStatement ps = cn.prepareStatement(sql);
+            ps.setString(1,boardDto.getContent());
+            ps.setString (2,boardDto.getWriter());
+            ps.setInt(3,boardDto.getPwd());
+            ps.executeUpdate();
+        }
+        catch(SQLException e){e.printStackTrace();return false;}
+        return true;
+    }
+    public ArrayList<BoardDto> boardPrint(){
+        String sql= "select *from board ";
+        ArrayList<BoardDto> list = new ArrayList<>();
+        try{
+            PreparedStatement ps = cn.prepareStatement(sql);
+            ResultSet rs = ps.executeQuery(sql);
+            while(rs.next()){
+                int num = rx.getInt("num");
+                String content  = rs.getString("content");
+                String writer = rx.getString("writer");
+                int pwd = rs.getInt("pwd");
+                BoardDto boardDto = new BoardDto(content,writer,pwd);
+                list.add(boardDto);
+            }
+            rs.close();
+        }
+        catch(SQLException e){e.printStackTrace();}
+        return list;
+    }
+}
+
+<3>
+public class BoardDao{
+    private Connection cn;
+    private static BoardDao boardDao = new BoardDao();
+    private Board(){
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb1125");
+            System.out.println("DB 연동 성공");
+        }
+        catch(ClassNotFoundException e){System.out.println("연동실패");e.printStackTrace();}
+    }
+    public static BoardDao getInstance(){return boardDao;}
+
+    public boolean boardWrite(BoardDto boardDto){
+        String sql = "insert into board(content,writer,pwd) values(?,?,?)";
+        try{
+            PreparedStatement ps = cn.prepareStatement(sql);
+            ps.setString(1,boardDto.getContent());
+            ps.setString(2,boardDto.getWriter());
+            ps.setInt(3,boardDto.getPwd());
+            ps.executeUpdate();
+        }
+        catch(SQLException e){e.printStackTrace();return false;}
+        return true;
+    }
+    public ArrayList<BoardDto> boardPrint(){
+        String sql = "select * from board ";
+        ArrayList<BoardDto>list = new ArrayList<>();
+        try{
+            PrepareStatement ps = ns.prepareStatement(sql);
+            ResultSet rs = ps.executeQuery(sql);
+            while(rs.next()){
+                int num = rs.getInt("num");
+                String content = rs.getString("content");
+                String writer = rs.getString("writer");
+                int pwd = rs.getInt("pwd");
+                BoardDto boardDto = new BoardDto(content,writer,pwd);
+                list.add(boardDto);
+            }
+            rs.close();
+        }
+        catch(SQLException e){e.printStackTrace();}
+        return list;
+    }
+}
+
+<4>
+public class BoardDto{
+    private Connection cn;
+    private static BoardDao boardDao = new BoardDao();
+    private Board(){
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            cn=DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb1125);
+            System.out.println("DB 연동 성공");
+        }
+        catch(ClassNotFoundException e){System.out.println("연동실패");e.printStackTrace());
+    }
+    public static BoardDao getInstance(){return boardDao;}
+
+    public boolean boardWrite(BoardDto boardDto){
+        String sql = "insert into board(content, writer,pwd)values(?,?,?)";
+        try{
+            PreparedStatement ps = cn.prepareStatement(sql);
+            ps.setString(1,boardDto.getContent());
+            ps.setString2,boardDto.getWriter());
+            ps.setInt(3,boardDto.getPwd());
+            ps.executeUpdate();
+        }
+        catch(SQLException e){e.printStackTrace();return false;}
+        return true;
+    }
+    public ArrayList<BoardDto> boardPrint(){
+        String sql = "select * from board ";
+        ArrayList<BoardDto> list = new ArrayList<>();
+        try{
+            PreparedStatement ps = ns.prepareStatement(sql);
+            ResultSet rs = ps.executeQuery(sql);
+            while(rs.next()){
+                int num = rs.getInt("num");
+                String writer = rs.getString("writer");
+                String content = rs.getString("content");
+                int pwd = rs.getInt("pwd");
+                BoardDto boardDto = new BoardDto(content.writer,pwd);
+                list.add(boardDto);
+            }
+            rs.close();
+        }
+        catch(SQLException e){e.printStackTrace();}
+        return list;
+    }
+}
+
+<5>
+public class BoardDao{
+    private Connection cn;
+    private static BoardDao boardDao = new BoardDao();
+    private Board(){
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            cn=DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb1125");
+            System.out.println("DB 연동 성공");
+        }
+        catch(ClassNotFoundException e){System.ut.println("연동 실패"); e.printStackTrace());
+    }
+    public static BoardDao getInstance(){return boardDao;}
+
+    public boolean boardWrite(BoardDto boardDto){
+        String sql = "insert into board(content,writer,pwd)values(?,?,?)";
+        try{
+            PreparedStatement ps= cn.prepareStatement(sql);
+            ps.setString(1,boardDto.getContent());
+            ps.setString(2,boardDto.getWriter());
+            ps.setInt(3,boardDto.getPwd());
+            ps.executeUpdate();
+        }
+        catch(SQLException e){e.printStackTrace();return false;}
+        return true;
+    }
+    public ArrayList<BoardDao> boardPrint(){
+        String sql = "select * from board ";
+        ArrayList<BoardDto> list = new ArrayList<>();
+        try{
+            PrepareStatement ps = ns.prepareStatement(sql);
+            ResultSet rs = ps.executeQuery(sql);
+            while(rs.next()){
+                int num = rs.getInt("num");
+                String content = rs.getString("content");
+                String writer = rs.getString("writer");
+                int pwd = rs.getInt("pwd");
+                BoardDto boardDto = new BoardDto(content,writer,pwd);
+                list.add(boardDto);
+            }
+            rs.close();
+        }
+        catch(SQLException e){e.printStackTrace();}
+        return list;
+    }
+}

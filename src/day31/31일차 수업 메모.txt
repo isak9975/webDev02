@@ -1,0 +1,22 @@
+[ CRUD ]
+    1. C(create)    : 쓰기 , 게시물쓰기    , 회원가입  , 제품추가      , 쪽지쓰기
+        DB : insert into 테이블명(필드명1,필드명2,필드명3) values(필드값1, 필드값2, 필드값3)
+    2. R(read)      : 출력 , 게시물 출력   , 내정보 출력, 제품 목록 출력, 내쪽지 출력
+        DB : select 필드명 from 테이블명
+    3. U(update)    : 수정 , 게시물 수정   , 내정보 수정, 제품수정      , 쪽지읽은 변경
+        DB : update 테이블명 set 수정할필드명 = 수정할값 where 조건필드 = 조건값
+    4. D(delete)    : 삭제 , 게시물삭제    , 회원탈퇴   , 제품삭제     , 쪽지 삭제
+        DB : delete from 테이블명 where 조건필드 = 조건값
+    -모든 홈페이지가 CRUD 기반
+
+    [ CRUD MVC 개발순서 - 어려운사람 ]
+        - 기능 단위 개발 : 회원기능 구현 -> 기능 세부화 : 회원가입, 로그인, 아이디찾기, 비밀번호 찾기, 회원탈퇴 등등
+        1. 회원가입 view -> 2.회원가입 controller -> 회원가입 dao (테스트)
+        - 추천하는 순서 :
+        1. VIEW
+        2. controller 구현
+        3. dao 구현
+        4. 테스트
+
+    DAO = Data Access Object 데이터 이동 객체
+    DTO = Data Transfer Object 데이터 접근 객체
