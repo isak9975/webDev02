@@ -34,8 +34,11 @@ create table product(
  create table stop(
 	재고번호_pk int unsigned,
 	재고수량 int, #음수 처리가 가능한 숫자 타입 사용
-    재고등록날짜 date default now(), # date(날짜타입), default : 레코드삽입시 초기값을 선언하기 now() : 현재 시스템 날짜 반환
+    재고등록날짜 datetime default now(), # date(날짜타입), default : 레코드삽입시 초기값을 선언하기 now() : 현재 시스템 날짜 반환
     제품번호_fk int unsigned,
     primary key(재고번호_pk), # 모든 테이블은 pk필드를 1개 이상 갖는다.
 	foreign key(제품번호_fk) references product(제품번호_pk) # fk 필드 설정하기
  );
+ 
+ # 작성한 테이블의 ER다이어그램 표현하기
+	#1. mysql workbencg
