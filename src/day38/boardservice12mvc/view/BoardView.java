@@ -1,7 +1,6 @@
 package day38.boardservice12mvc.view;
 
 import day38.boardservice12mvc.controller.BoardController;
-import day38.boardservice12mvc.model.BoardDao;
 import day38.boardservice12mvc.model.BoardDto;
 
 import java.util.ArrayList;
@@ -20,7 +19,6 @@ public class BoardView {
         return boardview;
     }
     //
-    public static boolean gn; // 로그인 상태
 
     Scanner scan = new Scanner(System.in);
 
@@ -47,7 +45,6 @@ public class BoardView {
         System.out.println("게시물 비밀번호 : "); int pwd = scan.nextInt();
         //2. 입력받은 값을 컨트롤러에게 전달
         //3. 컨트롤러에게 전달후 결과를 받아 출력하기
-
         boolean result = BoardController.getInstance().boardWrite(content,wrtier,pwd);
     }
     //2.게시물 출력 함수
@@ -106,7 +103,7 @@ public class BoardView {
 
     void boardLogin(){
         //gn = 로그인 상태
-        if(!gn){ // 로그인이 되어 있지 않으면
+        if(!BoardController.getGn()){ // 로그인이 되어 있지 않으면
             System.out.println("아이디를 입력 해주세요");
             String id = scan.next(); //아이디 입력 받기
             System.out.println("비밀번호를 입력 해주세요");
@@ -118,24 +115,24 @@ public class BoardView {
 
             if(result){
                 System.out.println("로그인 성공");
-                gn = true; // 로그인상태를 참으로
+                BoardController.setGn(true); // 로그인상태를 참으로
             }
             else{
                 System.out.println("아이디/비밀번호가 다릅니다.");
             }
 
         }
-        else if(gn){ // 로그인이 되어있으면
+        else if(BoardController.getGn()){ // 로그인이 되어있으면
             System.out.println("이미 로그인 되어 있습니다");
         }
 
     }
     void boardLogout(){
-        if(gn){
+        if(BoardController.getGn()){
             System.out.println("로그아웃 성공");
-            gn=false;
+            BoardController.setGn(false);
         }
-        else if(!gn){
+        else if(!BoardController.getGn()){
             System.out.println("이미 로그아웃 되어 있습니다");
         }
     } //로그인, 로그아웃 구현 완료

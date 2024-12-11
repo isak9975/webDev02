@@ -6,13 +6,21 @@ import day38.boardservice12mvc.model.BoardDto;
 import java.util.ArrayList;
 
 public class BoardController {
-
+    static boolean gn;
     private static BoardController boardController = new BoardController();
 
     private BoardController(){};
 
     public static BoardController getInstance() {
         return boardController;
+    }
+
+    public static boolean getGn() {
+        return gn;
+    }
+
+    public static void setGn(boolean gn) {
+        BoardController.gn = gn;
     }
 
     //1. 게시물 등록 제어 함수
