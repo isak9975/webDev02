@@ -32,7 +32,7 @@ public class BoardDao {
 
         public boolean boardWrite(BoardDto boardDto){
                 //1. SQL 작성 = SQL 그대로 작성 하되 데이터가 들어가는 자리는 ?로 작성
-                String sql = "insert into board(content,writer,pwd)values(?,?,?)";
+                String sql = "insert into board(content,writer,pwd)values(?,?,?);";
                 //2. 작성한  SQL 을 DB 연동객체의 기재한다. prepare: 준비한다, Statement : 기재한다, => 기재한다.
                 try {
                         PreparedStatement ps = connection.prepareStatement(sql);
@@ -50,7 +50,7 @@ public class BoardDao {
         }
         public ArrayList<BoardDto> boardPrint(){
                 //1.SQL 작성
-                String sql = "select * from board ";
+                String sql = "select * from board ;";
                 //2.SQL 기재
                 ArrayList<BoardDto> list = new ArrayList<>();
                          try {

@@ -16,6 +16,7 @@ public class BoardDto {
         public BoardDto(){}
         //2-2 매개ㅣ변수 1개 존재하는 생성자
         public BoardDto(String content){this.content=content;}
+
         //2-3 매개ㅣ변수 2개 존재하는 생성자
         public BoardDto(String content, String writer){this.content=content;this.writer=writer;}
         //2-4 매개ㅣ변수 3개 존재하는 생성자

@@ -2,8 +2,11 @@ package day38.boardservice12mvc.controller;
 
 import day38.boardservice12mvc.model.BoardDao;
 import day38.boardservice12mvc.model.BoardDto;
+import day38.boardservice12mvc.view.BoardView;
 
 import java.util.ArrayList;
+
+import static day38.boardservice12mvc.view.BoardView.gn;
 
 public class BoardController {
     static boolean gn;
